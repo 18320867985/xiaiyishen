@@ -1,0 +1,687 @@
+/*shouye*/
+
+// 轮播图
+.index-banner {
+    .carousel-inner {
+        .item img {
+            width: 100%;
+            min-height: 200px;
+            max-height: 1000px;
+        }
+    }
+    //left right btn btn
+    .left.carousel-control,
+    .right.carousel-control {
+        display: none;
+    }
+    // 轮播图 图片中的 文字
+    .carousel-inner .carousel-caption {
+        h3 {
+            font-family: centaur;
+            font-size: 60px !important;
+            color: #fff;
+            &+h3 {
+                margin-bottom: 16px !important;
+            }
+        }
+        p {
+            font-family: "微软雅黑";
+            font-size: 18px;
+            line-height: 28px;
+            &.p1 {
+                margin-top: 36px;
+            }
+            ;
+            &.p2 {
+                margin-bottom: 46px;
+            }
+            ;
+        }
+        // 按钮
+        a.btn {
+            width: 128px;
+            height: 46px;
+            line-height: 46px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+            background: none;
+            transition: all .5s;
+            &+.btn {
+                margin-left: 34px;
+            }
+            // hover style
+            &:hover {
+                background: #fff;
+                color: @text-df;
+            }
+        }
+    }
+    /***xs***/
+    @media (max-width:767px) {
+        .carousel-caption {
+            width: 100%;
+            padding-top: 10%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 23%;
+            text-align: right;
+        }
+        .carousel-inner .carousel-caption {
+            h3 {
+                font-family: centaur;
+                font-size: 20px !important;
+                color: #fff;
+                &+h3 {
+                    margin-bottom: 5px !important;
+                }
+            }
+            p {
+                width: 100%;
+                font-family: "微软雅黑";
+                font-size: 14px;
+                line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &.p1 {
+                    margin-top: 10px;
+                }
+                ;
+                &.p2 {
+                    margin-bottom: 10px;
+                }
+                ;
+            }
+            // 按钮
+            a.btn {
+               
+              width:  auto;
+            height: auto;
+            line-height: 18px;
+                padding: 4px 6px !important;
+                color: #fff;
+                text-align: center;
+                border: 1px solid #fff;
+                background: none;
+                transition: all .5s;
+                &+.btn {
+                    margin-left: 24px;
+                }
+                // hover style
+                &:hover {
+                    background: #fff;
+                    color: @text-df;
+                }
+            }
+        }
+    }
+    /* xs-2*/
+    @media (min-width:500px)and (max-width:767px) {
+        .carousel-caption {
+            padding-top: 15%;
+            padding-bottom: 10px;
+            padding-right: 30%;
+            .carousel-inner .carousel-caption {
+                p {
+                    width: 100%;
+                    font-family: "微软雅黑";
+                    font-size: 14px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    &.p1 {
+                        margin-top: 10px;
+                    }
+                    ;
+                    &.p2 {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    /***sm****/
+    @media (min-width:768px)and (max-width:991px) {
+        .carousel-inner .carousel-caption {
+            h3 {
+                font-family: centaur;
+                font-size: 30px !important;
+                color: #fff;
+                &+h3 {
+                    margin-bottom: 14px !important;
+                }
+            }
+            p {
+                font-family: "微软雅黑";
+                font-size: 16px;
+                line-height: 24px;
+                &.p1 {
+                    margin-top: 26px;
+                }
+                ;
+                &.p2 {
+                    margin-bottom: 26px;
+                }
+                ;
+            }
+            // 按钮
+            a.btn {
+                width: 98px;
+                height: 36px;
+                line-height: 36px;
+                padding: 0;
+                color: #fff;
+                text-align: center;
+                border: 1px solid #fff;
+                background: none;
+                transition: all .5s;
+                &+.btn {
+                    margin-left: 24px;
+                }
+                // hover style
+                &:hover {
+                    background: #fff;
+                    color: @text-df;
+                }
+            }
+        }
+    }
+}
+
+// 每一层的ttl
+.index-item-ttl {
+    padding: 60px 0;
+    text-align: center;
+    h2 {
+        margin-bottom: 36px;
+        padding: 0 !important;
+        font-family: centaur;
+        font-size: 48px;
+        color: #000;
+    }
+    ;
+    h4 {
+        margin-bottom: 30px;
+        font-family: "微软雅黑";
+        font-size: 18px;
+        color: #000;
+    }
+    p {
+        font-family: "微软雅黑";
+        font-size: 14px;
+        line-height: 24px;
+        color: #363636;
+    }
+}
+
+
+/***小屏 width 0-767 ***/
+
+@media (max-width:767px) {
+    .index-item-ttl {
+        padding: 40px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 20px;
+            padding: 0 !important;
+            font-family: centaur;
+            font-size: 28px;
+            color: #000;
+        }
+        ;
+        h4 {
+            margin-bottom: 20px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            color: #000;
+        }
+        p {
+            width: 100%;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            line-height: 20px;
+            color: #363636;
+        }
+    }
+}
+
+
+/***中屏 width 768-991***/
+
+@media (min-width:768px) and (max-width:991px) {
+    .index-item-ttl {
+        padding: 50px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 30px;
+            padding: 0 !important;
+            font-family: centaur;
+            font-size: 30px;
+            color: #000;
+        }
+        ;
+        h4 {
+            margin-bottom: 30px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            color: #000;
+        }
+        p {
+            width: 100%;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            line-height: 20px;
+            color: #363636;
+        }
+    }
+}
+
+//  每一层内容 index-item-cont
+// f2
+.index-item-cont {
+    padding: 0 !important;
+    // max-height: 1080px;
+    background: #f8f8f8;
+    //左边视频
+    .f2-v-l {
+        width: 100%;
+        height: auto;
+        background: #333;
+        margin: 0 !important;
+    }
+    .v-play {
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        top: 50%;
+        margin-top: -30px;
+        margin-left: -30px;
+        width: 60px;
+        height: 60px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    img{
+        width: 100%;
+    }
+    .v-desc{
+       position: absolute;
+       z-index: 8;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      
+        color:@text-white;
+        
+        h2{
+            margin-bottom: 36px;
+            font-family: candara-Bold;
+            font-size: 36px;
+            
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    
+    .f2-v-r {
+        width: 100%;
+        height: auto;
+        background: #333;
+        margin: 0 !important;
+        &.v-2 {
+//          margin-top: -5px !important;
+        }
+    }
+    // 不支持的video
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /***小屏 width 0-767 ***/
+    @media (max-width:767px) {
+        //左边视频
+        .f2-v-l {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+        .f2-v-r {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            &.v-2 {
+//              margin-top: -5px;
+            }
+            
+            
+        }
+        
+        
+         .f2-v-r+.f2-v-r,
+        .col-sm-6+.col-sm-6{
+            margin-top: 10px !important;
+        }
+    }
+}
+
+
+
+// f3
+.index-item-cont3 {
+    img {
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        float: none;
+        // xs  
+        @media (max-width: 767px) {}
+        width: 100%;
+    }
+}
+
+// f4
+.index-item-cont4 {
+    background: #f6f6f6;
+    // 右边店铺
+    .content {
+        padding-bottom: 30px;
+        h2 {
+            margin-top: 80px;
+            margin-bottom: 8px;
+            font-family: "微软雅黑";
+            font-size: 24px;
+            color: #333;
+        }
+        span {
+            font-family: "微软雅黑";
+            font-size: 14px;
+            color: #333;
+        }
+        p {
+            margin-top: 54px;
+            margin-bottom: 38px;
+        }
+        .btn {
+            width: 84px;
+            height: 42px;
+            padding: 0;
+            line-height: 42px;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #ddd;
+            background: none;
+            transition: all .5s;
+            &:hover {
+                background: @text-df;
+                color: #fff;
+            }
+        }
+    }
+    img {
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        float: none;
+        // xs  
+        @media (max-width: 767px) {
+           width: 100%;
+        }
+     
+    }
+}
+
+.index-f4-desc {
+    height: 300px;
+    h2 {
+        margin-top: 108px;
+        font-family: "微软雅黑";
+        font-size: 18px !important;
+        color: #363636;
+    }
+    // 友情链接
+    .link {
+        margin-top: 46px;
+        a+a {
+            margin-left: 30px;
+        }
+    }
+}
+
+// 滑梯
+.huati {
+    position: fixed;
+    top: 50%;
+    right: 3%;
+    z-index: 99999;
+    display: none;
+    //  margin-top: -39px;
+    ul.nav {
+        li {
+            &+li {
+                margin-top: 10px;
+            }
+            a {
+                display: block;
+                padding: 6px;
+                background: #999;
+                border-radius: 50%;
+            }
+            &.active a {
+                background: darken( @text-df,10%);
+            }
+        }
+    }
+}
+
+.scroll-top {
+  
+    ul.nav {
+        li {
+           
+           
+            &.active a {
+                background: darken( @text-df,10%);
+                color:@text-white;
+            }
+        }
+    }
+}
+
+// 小屏滑梯hidden
+@media (min-width:1170px) {
+    .huati {
+        display: block;
+    }
+}
+
+/******** 播放器 ************/
+      
+    .v-temp {
+          @video-w:300px;
+       @video-h:150px;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        z-index: 999999;
+        display: none;
+        width: @video-w;
+        height: @video-h;
+         background:rgba(54,54,54,0.6);
+        
+        .handle{
+            top:0;
+            height: 28px;
+            width: 100%;
+          
+            text-align: right;
+            
+            cursor: move;
+        }
+      
+            .v-close {
+                font-size: 20px;
+                top:5px;
+               margin-right: 3px;
+                color: orangered;
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+      
+           
+        .v-video {
+            width: @video-h;
+            height: @video-h;
+        }
+    }
+    
+    .v-temp{
+      
+       .video-content {
+           position: relative;
+           
+       }
+       p{
+           position:absolute;
+          width: 300px;
+           z-index: 99999;
+           
+            left: 0;
+            text-align: center;
+            background: #fff;
+            color:red;
+            a{
+                color:red;
+            }
+       }
+    }
+
+@media(max-width:767px) {
+    @video-w:300px;
+    @video-h:200px;
+    .v-temp {
+        position: fixed;
+       
+        z-index: 999999;
+        width: @video-w;
+        height: @video-h;
+         margin-top: -@video-h/2;
+        margin-left: -@video-w/2;
+        //  .v-close {
+        //      font-size: 24px;
+        //      top:0;
+        //  }
+        .v-video {
+            width: @video-w;
+            height: @video-h;
+        }
+    }
+}
+
+
+/***中屏 width 768-991***/
+
+@media (min-width:768px) {
+    
+     @video-w:400px;
+    @video-h:300px;
+    .v-temp {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 999999;
+        width: @video-w;
+        height: @video-h;
+        margin-top: -@video-h/2;
+        margin-left: -@video-w/2;
+        //  .v-close {
+        //      font-size: 24px;
+        //      top:0;
+        //  }
+        .v-video {
+            width: @video-w;
+            height: @video-h;
+        }
+    }
+}
+
+
+/*** 大屏width 992-1199 ***/
+
+@media (min-width:992px) {
+    @video-w:500px;
+    @video-h:350px;
+    .v-temp {
+        position: fixed;
+       
+        z-index: 999999;
+        width: @video-w;
+        height: @video-h;
+          margin-top: -@video-h/2;
+        margin-left: -@video-w/2;
+        //  .v-close {
+        //      font-size: 24px;
+        //      top:0;
+        //  }
+        .v-video {
+            width: @video-w;
+            height: @video-h;
+        }
+    }
+}
+
+
+/*** 加大屏width 1200以上 ***/
+
+@media (min-width:1200px) {}
+
+
+/**金典系列***/
+    
+.index-jdxl{
+     position:  relative;
+    .desc{
+        position:  absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        h2{
+            margin-top: 76px;
+             font-family: centaur;
+                font-size: 30px ;
+                color: #fff;
+        }
+        h5{
+             margin-top: 38px;
+             font-family:  "微软雅黑";
+                font-size: 16px ;
+                color: #fff;
+        }
+        
+        p{
+              margin-top: 28px;
+               font-family:  "微软雅黑";
+                font-size: 10px ;
+                color: #fff;
+        }
+        &.v-2,&.v-3{
+          
+        h2,
+        h5,
+        p{
+            
+       color:#666;
+        }
+    }
+    
+}
+}

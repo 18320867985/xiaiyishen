@@ -1,0 +1,150 @@
+/*头部*/
+
+body {
+    @media(min-width: 768px) {
+        padding-top: 126px;
+    }
+    @media(max-width:767px) {
+         padding-top: 104px;
+    }
+}
+
+
+.head-wrap.navbar-default {
+    //  下拉menu
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 13px 22px;
+    }
+    .dropdown-menu {
+        max-width: 150px !important;
+        min-width: 110px;
+    }
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 10px 25px !important;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #333333;
+        white-space: nowrap;
+    }
+    //小屏 xs 
+    @media (max-width:767px) {
+        .navbar-brand.visible-xs {
+            color: #fff;
+        }
+        .menu-slide {
+            display: block;
+            position: fixed;
+            z-index: 99999 !important;
+            right: -250px;
+            width: 250px;
+            height: 350px;
+             padding-bottom: 15px;
+            //   height: 500px !important;
+            background: @head-bg;
+            box-shadow: 1px 1px 5px #ccc;
+            overflow-y: scroll;
+        }
+    }
+}
+
+// 中英文
+
+.language{
+  
+  padding-left: 5px; 
+  padding-right: 5px; 
+  position: relative;
+    top:12px;
+//  right: 3%;
+    a{
+     font-size: 14px;
+//   font-weight: bold;
+
+width: 40px;
+     
+     &.active{
+         color:@text-white;
+         
+         
+     }
+    }
+    span{
+        padding:  0 5px;
+        font: 12px;
+        line-height: 10px;
+        color:#f8f8f8;
+        
+    }
+    
+    
+    @media(max-width:767px){
+       
+    }
+}
+
+
+
+
+/***中屏 width 768-991***/
+
+@media (min-width:768px) {
+    .menu-slide {
+        display: none;
+    }
+}
+
+
+/* logo*/
+
+.head-logo {
+    height: 80px;
+    text-align: left;
+    color: #1d1b1b;
+    background: #fff;
+    
+    img{
+        margin: 0 !important;
+      
+         height: 80px;
+          padding: 0;
+          
+          border: none !important;
+    }
+    
+    @media (max-width:767px){
+        height: 60px;
+       
+       img{
+            margin: 0 !important;
+           height: 60px; 
+           max-width: 200px;
+            border: none !important;
+       } 
+    }
+}
+
+
+/*置顶*/
+
+.zhiding {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 999;
+    display: none;
+    padding: 8px 8px 2px 8px;
+    background: rgba(54, 54, 54, .5);
+    transition: all .5s;
+    &:hover {
+        cursor: pointer;
+          background: rgba(54, 54, 54, 1);
+    }
+    .glyphicon {
+        color: #fff;
+        font-size: 20px;
+    }
+}

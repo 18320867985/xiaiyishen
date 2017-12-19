@@ -1,0 +1,83 @@
+/*最新招聘*/
+
+// bannerimage
+.coop-banner {
+    img {
+        max-height: 540px;
+        min-height: 200px;
+    }
+}
+
+// coop-desc
+.coop-desc {
+    h2 {
+        margin-top: 93px;
+        font-family: centaur;
+        font-size: 71px;
+        color: #464646;
+        text-align: center;
+    }
+    h4 {
+        margin-top: 27px;
+        margin-bottom: 80px;
+        text-align: center;
+        font-family: "微软雅黑";
+        font-size: 18px;
+    }
+    // cantact
+    .contact {
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        text-align: left;
+        label {
+            margin-bottom: 15px;
+            font-family: "微软雅黑";
+           
+        }
+        span {
+            margin-left: 5px;
+            margin-bottom: 30px;
+            font-weight: 200;
+            
+        }
+        // item+item
+        .item+.item {
+            margin-top: 15px;
+        }
+    }
+    /*xs*/
+    @media(max-width:767px) {
+        h2 {
+            margin-top: 24px;
+            font-family: centaur;
+            font-size: 36px;
+            color: #464646;
+            text-align: center;
+        }
+        h4 {
+            margin-top: 24px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-size: 16px;
+        }
+        .contact {
+            text-align: left;
+            label {
+                margin-bottom: 15px;
+                font-family: "微软雅黑";
+              
+            }
+            span {
+              
+                margin-bottom: 30px;
+                font-weight: 400;
+            }
+            
+            .item+.item{
+             margin-top: 15px;
+         }
+        }
+    }
+}

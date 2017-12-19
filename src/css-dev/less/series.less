@@ -1,0 +1,264 @@
+
+/*视频展示*/
+
+
+
+.changjing-banner img{
+     width: 100%;
+     
+}
+
+// 每一层的ttl
+.shiping-item-ttl {
+ padding-top:50px ;
+
+padding-bottom: 20px;
+    text-align: center;
+    h2 {
+        margin-bottom: 15px;
+        padding: 0 !important;
+        font-family: centaur;
+        font-size: 48px;
+        color: #000;
+    }
+    ;
+    h4 {
+        margin-bottom: 15px;
+        font-family: "微软雅黑";
+        font-size: 18px;
+        color: #000;
+    }
+    p {
+       
+        font-family: "微软雅黑";
+        font-size: 14px;
+        line-height: 24px;
+        color: #363636;
+    }
+}
+
+
+/***小屏 width 0-767 ***/
+
+@media (max-width:767px) {
+    .shiping-item-ttl {
+        padding: 40px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 50px;
+            padding: 0 !important;
+            font-family: centaur;
+            font-size: 28px;
+            color: #000;
+        }
+        ;
+        h4 {
+            margin-bottom: 20px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            color: #000;
+        }
+        p {
+            width: 100%;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            line-height: 20px;
+            color: #363636;
+        }
+    }
+}
+
+
+/***中屏 width 768-991***/
+
+@media (min-width:768px) and (max-width:991px) {
+    .shiping-item-ttl {
+        padding: 50px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 30px;
+            padding: 0 !important;
+            font-family: centaur;
+            font-size: 30px;
+            color: #000;
+        }
+        ;
+        h4 {
+            margin-bottom: 30px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            color: #000;
+        }
+        p {
+            width: 100%;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            line-height: 20px;
+            color: #363636;
+        }
+    }
+}
+
+
+
+
+
+//  每一层内容 
+// f2
+.shiping-item-cont {
+    padding: 0 !important;
+    // max-height: 1080px;
+    background: #f8f8f8;
+    //左边视频
+    .f2-v-l {
+        width: 100%;
+        height: auto;
+        max-height: 900px;
+        background: #333;
+        margin: 0 !important;
+    }
+    .v-play {
+        position: absolute;
+        z-index: 9;
+        bottom: 20px;
+        right: 40px;
+        width: 60px;
+        height: 60px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .v-desc{
+       position: absolute;
+       z-index: 8;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      
+        color:@text-white;
+        
+        h2{
+            margin-bottom: 36px;
+            font-family: candara-Bold;
+            font-size: 36px;
+            
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    
+    .f2-v-r {
+        width: 100%;
+        height: auto;
+         max-height: 900px;
+        background: #333;
+        margin: 0 !important;
+        &.v-2 {
+            margin-top: -5px !important;
+        }
+    }
+    // 不支持的video
+    img {
+        width: 100%;
+        height: auto;
+    }
+    /***小屏 width 0-767 ***/
+    @media (max-width:767px) {
+        //左边视频
+        video.f2-v-l {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+        video.f2-v-r {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            &.v-2 {
+                margin-top: -5px;
+            }
+        }
+        
+        .col-sm-6+.col-sm-6{
+            
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/***小屏 width 0-767 ***/
+
+@media (max-width:767px) {
+    .shiping-item-cont {}
+}
+
+
+
+// 缩列图
+ .shiping .suolie{
+     
+ 
+  padding: 0;
+  
+  img{
+      padding: 5px 0;
+  }
+       
+    
+/***小屏 width 0-767 ***/
+
+@media (max-width:767px) {
+    
+     img{
+      position: relative;
+      transition: all .8s;
+      &:hover{
+          z-index: 99999;;
+          transform: scale(1.05);
+      }
+  }
+}
+
+
+
+/***中屏 width 768-991***/
+
+@media (min-width:768px) {
+    
+      .col-sm-6,.col-md-3{
+     // overflow: hidden;
+  }
+  img{
+      position: relative;
+      transition: all .8s;
+      &:hover{
+          z-index: 99999;;
+          transform: scale(1.5);
+      }
+  }
+}
+
+
+/*** 大屏width 992-1199 ***/
+
+@media (min-width:992px) {
+     img{
+         width: 100%;
+        min-height: 200px;
+        max-height: 400px;
+    }
+}
+
+
+/*** 加大屏width 1200以上 ***/
+
+@media (min-width:1200px) {
+     
+} 
+
+
+    
+}

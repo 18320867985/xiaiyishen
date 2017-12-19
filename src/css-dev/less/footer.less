@@ -1,0 +1,88 @@
+/*footer*/
+
+.footer {
+    background: @footer-bg;
+    ul {
+        margin-top: 40px;
+        margin-bottom: 42px;
+        padding: 0;
+         
+            @media( max-width:767px){
+               margin-top: 20px;
+        margin-bottom: 20px;
+        
+           }
+    }
+    ul li {
+         padding: 0 !important;
+        color: #fff;
+        
+        label{
+                font-size: 14px !important;
+                padding: 0 !important;
+                margin: 0;
+            }
+        // h4
+        &.ttl {
+            margin-bottom: 32px;
+            h4 {
+                font-size: 18px;
+            }
+            
+            
+            @media( max-width:767px){
+                 margin-bottom: 22px;
+              h4 {
+                font-size: 16px;
+                }
+           }
+        }
+        //电话
+        &.tel {
+            padding: 0;
+            margin-bottom: 16px;
+             font-size: 14px;
+           
+          
+            @media( max-width:767px){
+               margin-bottom: 12px;
+           }
+        }
+        
+        // 友情链接
+        &.yx-link{
+          
+            a+a{
+                
+                margin-left: 10px;
+                
+                img{
+                    width: 18px ;
+                    height: 18px;
+                }
+            }
+            
+        }
+    }
+    // 版权
+    .copyright {
+        padding: 10px 0;
+        border: none;
+        border-top: 1px solid #fff;
+        color: @text-white;
+        font-size: 14px;
+        
+        
+        
+        .t1{
+            font-size: 14px;
+        }
+        .t2{
+           font-size: 14px;  
+           @media( max-width:767px){
+               
+               margin-top: 5px;
+           }
+        };
+    }
+}

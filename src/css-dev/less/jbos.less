@@ -1,0 +1,138 @@
+/* 最新招聘*/
+
+.jbos-desc {
+    .form-big {
+        padding: 20px 0;
+        margin-bottom: 100px;
+ 
+        .col-sm-4 {
+            padding-right: 20px;
+             
+              h4{
+                  float: right;
+                   clear: both;
+                  width: 200px;
+                  margin-bottom: 15px;
+                  text-align:  center;
+                  font-size: 18px ;
+                  font-weight: bold;
+                  font-family: "微软雅黑";
+                  
+                  
+              }
+              
+              ul{  clear: both;
+                   float: right;
+                  li{
+                      width: 200px;
+                      border:   1px solid #ddd;
+                      border-left: none;
+                      border-right: none;
+                      
+                      &+li{
+                          border-top:none;
+                      }
+                       a{
+                           display: block;
+                           padding:  15px 20px;
+                            color: darken( @text-base ,20%);
+                        
+                           font-size: 14px;
+                        
+                           text-align: center;
+                          
+                       }
+                       
+                       
+                       &.active {
+                           border-right:  4px solid @text-df ; 
+                           a{
+                               color:darken( @text-df,10%); 
+                           }
+                          
+                       }
+                  }
+              }
+              
+              @media(max-width:767px){
+
+                  
+                     h4{
+               
+                  width:  100%;
+                  margin-bottom: 15px;
+                  text-align:  center;
+                  font-size: 18px ;
+                  
+                  
+              }
+              
+              ul{  clear: both;
+                    width:  100%;
+                  li{
+                      width: 100%;
+                      border:   1px solid #ddd;
+                      border-left: none;
+                      border-right: none;
+                      
+                      &+li{
+                          border-top:none;
+                      }
+                       a{
+                           display: block;
+                           padding:  10px 20px;
+                            color: darken( @text-base ,20%);
+                        
+                           font-size: 14px;
+                        
+                           text-align: center;
+                          
+                       }
+                       
+                       
+                       &.active {
+                           border-right:  4px solid @text-df ; 
+                           a{
+                               color:darken( @text-df,10%); 
+                           }
+                          
+                       }
+                  }
+              }
+              }
+              
+        }
+        
+        .col-sm-8 {
+           padding-left: 100px;
+              h4{
+                  width: 80%;
+                  padding: 10px 20px;
+                  margin-bottom: 30px;
+                   text-align: left;
+                   color:darken( @text-df,10%); 
+                    background: #f8f8f8;
+                    border-radius: 5px;
+                    font-size: 14px;
+                   
+              };
+              
+               
+                    p{
+                        padding-left:  10px;
+                        color: darken( @text-base ,20%);
+                        
+                        font-size: 14px ;
+                        
+                        &+p{
+                            margin-top: 20px ;
+                        }
+                    }
+                    
+                    
+                    
+        }
+
+
+    }
+}
